@@ -4,15 +4,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Navigation from './Navigation';
+import Navigation from './shared/Navigation';
+import Footer from './shared/Footer';
 
 const App = ({ children }) => (
-  <div>
-    <Navigation/>
+  <div className="h-100">
+    <Navigation />
 
-    <div className='mx-3'>
+    <div className="main">
       {children}
     </div>
+
+    <Footer />
   </div>
 );
 

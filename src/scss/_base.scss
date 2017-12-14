@@ -1,13 +1,18 @@
 html,
 body,
-body > .container {
+body > #root {
   height: 100%;
+  font-family: 'Montserrat';
 }
 
-body {
-  > .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.main {
+  display: flex;
+  min-height: calc(100% - 3.5rem - 3.5rem); // page - header - footer
+
+  > div { flex: 1; }
+}
+
+.link-unstyled, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
 }
