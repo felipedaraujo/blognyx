@@ -115,6 +115,18 @@ const config = {
         test: /\.html$/,
         use: ['raw-loader']
       },
+
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      },
     ]
   },
 
@@ -155,6 +167,10 @@ const config = {
         return module.context && module.context.indexOf('node_modules') !== -1;
       }
     }),
+
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    })
   ]
 };
 
