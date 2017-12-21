@@ -1,7 +1,7 @@
 # Blognyx
 > A super blog written in React
 
-![Blognyx Screen](https://s3.amazonaws.com/blognyx/blognyx-screen-record.gif)
+![Blognyx Screen](https://s3.amazonaws.com/blognyx/blognyx-screen-record.gif){:class="img-responsive"}
 
 ### Run
 * `npm install` to install all npm packages
