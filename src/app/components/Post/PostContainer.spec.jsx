@@ -7,14 +7,14 @@
 import React from 'react';
 import ReactTestUtils from 'react-dom/test-utils';
 
-import BlogContainer from './BlogContainer';
+import PostContainer from './PostContainer';
 
-xdescribe('BlogContainer', function() {
+xdescribe('PostContainer', function() {
   let component;
 
   beforeEach(function() {
     const renderer = ReactTestUtils.createRenderer();
-    renderer.render(<BlogContainer />);
+    renderer.render(<PostContainer />);
     component = renderer.getRenderOutput();
   });
 

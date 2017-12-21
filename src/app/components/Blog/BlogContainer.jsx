@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { API_ROOT_URL } from './../../config.js'
 
-import Blog from './Blog';
+import RestAPI from './../../helpers/RestAPI';
+import BlogPost from './BlogPost';
 
 class BlogContainer extends Component {
   constructor(props) {
@@ -11,19 +11,10 @@ class BlogContainer extends Component {
   }
 
   componentDidMount() {
-    this.getPosts().then(posts => {
+    RestAPI.fetchAll('/posts').then(posts => {
       const sortedPosts = this.sortByDate(posts);
       this.setState({ posts: sortedPosts });
     });
-  }
-
-  getPosts() {
-    return fetch(`${API_ROOT_URL}/posts`)
-      .then(response => response.json())
-      .then(responseJson => responseJson)
-      .catch(error => {
-        console.error(error);
-      });
   }
 
   sortByDate(array) {
@@ -37,7 +28,14 @@ class BlogContainer extends Component {
       <div className='container'>
         <div className='row justify-content-center'>
           <main className="col-lg-8 pt-5">
-            <Blog posts={this.state.posts} />
+            <div className="container">
+              <div className="row">
+                {
+                  this.state.posts.map(post =>
+                    <BlogPost post={post} key={post.id} />)
+                }
+              </div>
+            </div>
           </main>
         </div>
       </div>

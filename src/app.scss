@@ -8,10 +8,14 @@
 // Manifest
 @import "scss/base";
 
-@import "app/Home/home";
+@import "app/components/Home/home";
 
-@import "app/NoMatch/nomatch";
+@import "app/components/NoMatch/nomatch";
 
-@import "app/Post/Comments/comments";
+@import "app/components/Blog/blog_post";
 
-@import "app/Post/CommentForm/comment_form";
+@import "app/components/Post/post";
+
+@import "app/components/Post/Comment/comment";
+
+@import "app/components/Post/CommentForm/comment_form";

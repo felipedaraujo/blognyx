@@ -7,14 +7,14 @@
 import React from 'react';
 import ReactTestUtils from 'react-dom/test-utils';
 
-import CommentForm from './CommentForm';
+import Post from './Post';
 
-xdescribe('CommentForm', function() {
+xdescribe('Post', function() {
   let component;
 
   beforeEach(function() {
     const renderer = ReactTestUtils.createRenderer();
-    renderer.render(<CommentForm />);
+    renderer.render(<Post />);
     component = renderer.getRenderOutput();
   });
 

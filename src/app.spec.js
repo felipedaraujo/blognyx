@@ -7,7 +7,7 @@
 import React from 'react';
 import ReactTestUtils from 'react-dom/test-utils';
 
-import App from './app/App';
+import App from './app/components/App';
 
 describe('App test suite', function() {
   let component;

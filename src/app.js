@@ -11,12 +11,12 @@ import { render } from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 // Our app
-import App from './app/App';
-import Home from './app/Home';
-import About from './app/About';
-import BlogContainer from './app/Blog';
-import PostContainer from './app/Post';
-import NoMatch from './app/NoMatch';
+import App from './app/components/App';
+import Home from './app/components/Home';
+import About from './app/components/About';
+import BlogContainer from './app/components/Blog';
+import PostContainer from './app/components/Post';
+import NoMatch from './app/components/NoMatch';
 
 render((
   <Router history={browserHistory}>
