@@ -1,7 +1,12 @@
 # Blognyx
 > A super blog written in React
 
-<img src="https://s3.amazonaws.com/blognyx/blognyx-screen-record-resized.gif" alt="Blognyx Screencast" />
+<a href="https://youtu.be/WN7J90lK9Zo"><img src="https://s3.amazonaws.com/blognyx/blognyx-screen-record-resized.gif" alt="Blognyx Screencast" /></a>
+
+### Important links
+* Code: https://github.com/felipedaraujo/blognyx
+* Live: http://blognyx.s3-website-us-east-1.amazonaws.com/
+* Youtube video: https://youtu.be/WN7J90lK9Zo
 
 ### Run
 * `npm install` to install all npm packages
