@@ -1,7 +1,7 @@
 # Blognyx
 > A super blog written in React
 
-![Blognyx Screen](http://blognyx.s3-website-us-east-1.amazonaws.com/blognyx-screen-record.gif)
+<img src="https://s3.amazonaws.com/blognyx/blognyx-screen-record-resized.gif" alt="Blognyx Screencast" />
 
 ### Run
 * `npm install` to install all npm packages
